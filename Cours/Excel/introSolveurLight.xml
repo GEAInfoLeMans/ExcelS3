@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Solveur</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:rem>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">L'article est extrait de l'aide en ligne d'Excel et a été traduit automatiquement, voir l'avertissement. Vous pouvez consulter la version en anglais de cet article ici. </sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:rem>
+				<sp:def>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Le Solveur est un complément Microsoft Excel que vous pouvez utiliser pour des analyse de scénarios. Le Solveur vous permet de trouver une valeur optimale (maximale ou minimale) pour une formule dans une seule cellule, appelée cellule objectif, en fonction de contraintes ou de limites appliquées aux valeurs d'autres cellules de la formule dans une feuille de calcul. Le Solveur utilise un groupe de cellules, appelées variables de décision ou simplement cellules variables, qui interviennent dans le calcul des formules des cellules objectif et de contraintes. Le Solveur affine les valeurs des cellules variables de décision pour satisfaire aux limites appliquées aux cellules de contraintes et produire le résultat souhaité pour la cellule objectif.</sc:para>
+								<sc:para xml:space="preserve">En réalité, vous pouvez utiliser le solveur pour déterminer la valeur minimale ou maximale d'une cellule en modifiant d'autres cellules. Par exemple, vous pouvez modifier la quantité de votre budget publicitaire prévu et voir les effets sur votre montant des bénéfices prévus.</sc:para>
+								<sc:para xml:space="preserve">Remarque Versions du solveur antérieures à Excel 2007 auquel la cellule objectif en tant que « cellule cible » et les cellules variables de décision « cellules variables » ou « cellules variables ». Nombreuses améliorations ont été apportées au solveur complément pour Excel 2010, si vous utilisez Excel 2007 votre expérience sera légèrement différente.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:def>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Programme quotidien optimal de production : Énoncé</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Énoncé</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Une entreprise fabrique et vend deux produits A et B. Elle réalise sur A une marge unitaire de 100 et 125 sur B. Ces produits sont fabriqués par deux machines M1 et M2. La fabrication de A nécessite 1 heure de M1 et une heure de M2. La fabrication de B nécessite 2 heures de M1 et une heure de M2.</sc:para>
+								<sc:para xml:space="preserve">L'atelier est équipé de 5 machines M1 et 3 machines M2 fonctionnant 8 heures par jour. Le temps machine disponible chaque jour est donc de 40h pour M1, et de 24h pour M2.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Objectif</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">La questions à laquelle nous souhaitons répondre est la suivante :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Quelle quantité de pièces A et B doit-on fabriquer pour maximiser la marge en respectant les contraintes de disponibilité des machines et les contraintes de fabrication ?</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Avant de commencer</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Pour bien comprendre la résolution du problème sous excel il est fortement conseillé de faire quelques exemples sur le papier. Par exemple si l'entreprise produit 10 de A et 5 de B quelle est la charge pour les machines ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Programme quotidien optimal de production : Création de la feuille Excel</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="code"><sc:inlineStyle role="emp">NOTE</sc:inlineStyle> : Pour qu'Excel puisse gérer les opérations (multiplication) sur les heures proprement dans la suite, rentrer les heures en utilisant le format &quot;=n/24&quot; avec &quot;n&quot; le nombre d'heures.</sc:inlineStyle></sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/solveur/nsur24.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Nous allons d'abord effectuer la saisie des données et effectuer la présentation.</sc:para>
+										<sc:para xml:space="preserve">Tout ce qui se trouve en dessous de la ligne 11 dans la figure doit être exprimé sous forme de formules. </sc:para>
+										<sc:para xml:space="preserve">Dans un premier temps, Le nombre de produits fabriqués est fixé à la main. Nous verrons dans la suite comment utiliser le solveur pour fixer ces nombres de façon à maximiser la marge.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/solveur/solveur1.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:meth>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Programme quotidien optimal de production : Résolution du problème avec le solveur</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La mise en place de la feuille est terminée. Le problème est maintenant de trouver quelle quantité produire de A et B pour <sc:inlineStyle role="emp">maximiser</sc:inlineStyle> la marge. Le temps machine utilisé pour produire A et B ne doit pas être supérieur au temps disponibles sur les machines M1 et M2 : ce sont des <sc:inlineStyle role="emp">contraintes</sc:inlineStyle>. </sc:para>
+								<sc:para xml:space="preserve">La contrainte concernant les machines de M1 s'exprime ainsi:</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">$F$12&lt;=$B$7</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">et de même pour M2 :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="code">$F$14&lt;=$B$8</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Il nous reste plus qu'à utiliser le solveur d'excel pour résoudre ce problème et obtenir ainsi les valeurs <sc:inlineStyle role="emp">optimales</sc:inlineStyle> du nombre d'objets A et B à fabriquer pour <sc:inlineStyle role="emp">maximiser</sc:inlineStyle> la marge en respectant les <sc:inlineStyle role="emp">contraintes</sc:inlineStyle>.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/video0/solveur.mp4">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:meth>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

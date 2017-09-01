@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Tableau croisé dynamique</sp:title>
+		</op:uM>
+		<sp:obj>
+			<op:sTxt>
+				<sc:para xml:space="preserve">Créer et utiliser des tableaux croisés dynamiques dans excel</sc:para>
+			</op:sTxt>
+		</sp:obj>
+		<sp:courseUc sc:refUri="/Cours/Excel/aideExcelTCD.xml"/>
+		<sp:practUc sc:refUri="/Cours/Excel/exoTCD1.xml"/>
+		<sp:practUc sc:refUri="/Cours/Excel/exotcdGraphique.xml"/>
+		<sp:practUc sc:refUri="/Cours/Excel/exoEDT.xml"/>
+	</op:courseUa>
+</sc:item>

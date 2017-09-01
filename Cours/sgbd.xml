@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:ueDiv xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:ueDivM>
+			<sp:title>Systeme de gestion de base de données - Modélisation MERISE</sp:title>
+			<sp:sTitle>MERISE pour les SGBD</sp:sTitle>
+		</op:ueDivM>
+		<sp:intro>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Extrait du Programme Pédagogique National</sc:para>
+						<sc:para xml:space="preserve">PPN Gestion des entreprises et des administrations, 2013</sc:para>
+						<sc:para xml:space="preserve">© Ministère de l'enseignement supérieur et de la recherche, 2013</sc:para>
+						<sc:para xml:space="preserve">http://www.enseignementsup-recherche.gouv.fr</sc:para>
+						<sc:para xml:space="preserve">Système de gestion de bases de données de la GCF</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Objectifs du module :</sc:inlineStyle></sc:para>
+						<sc:para xml:space="preserve">Participer à la conception et à l'évolution des systèmes d'information dans une organisation </sc:para>
+						<sc:para xml:space="preserve">Développer et paramétrer une application informatique avec un Système de Gestion de Bases de Données Relationnelles (SGBDR)</sc:para>
+						<sc:para xml:space="preserve">Compétences visées :</sc:para>
+						<sc:para xml:space="preserve">Représenter schématiquement les flux d'information, les données et les traitements d'un système d'informatisation</sc:para>
+						<sc:para xml:space="preserve">Rechercher et proposer une ou plusieurs solutions à un problème d'informatisation</sc:para>
+						<sc:para xml:space="preserve">Développer tout ou partie d'une application informatique avec un SGBDR</sc:para>
+						<sc:para xml:space="preserve">Utiliser l'aide en ligne et/ou la documentation technique d'un SGBDR</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Contenus :</sc:inlineStyle></sc:para>
+						<sc:para xml:space="preserve">Modélisation des flux du système d'information, des données et des traitements</sc:para>
+						<sc:para xml:space="preserve">Articulation des données et des traitements</sc:para>
+						<sc:para xml:space="preserve">Caractéristiques des Systèmes de Gestion de Bases de Données Relationnelles (SGBDR)</sc:para>
+						<sc:para xml:space="preserve">Création et interrogation d'une base de données et de l'interface utilisateur</sc:para>
+						<sc:para xml:space="preserve">Liaisons entre applications informatiques et leurs mises en œuvre</sc:para>
+						<sc:para xml:space="preserve">Mise en œuvre et exploitation d'un cas appliqué à la GCF</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:intro>
+		<sp:courseUa sc:refUri="/Cours/bdd/sig/si.xml"/>
+		<sp:courseUc sc:refUri="/Cours/bdd/merise/merise.xml"/>
+		<sp:courseUa sc:refUri="/Cours/bdd/flux/flux.xml"/>
+		<sp:courseUa sc:refUri="/Cours/bdd/mct/mct.xml"/>
+	</op:ueDiv>
+</sc:item>

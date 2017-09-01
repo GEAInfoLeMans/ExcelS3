@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Remboursement d'emprunt</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Intérêts et Remboursements</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txtRes>
+					<op:txtRes>
+						<op:txtResM>
+							<sp:pos>rgt</sp:pos>
+						</op:txtResM>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Lorsque vous contractez un prêt, vous empruntez un capital que vous remboursez avec des intérêts. À chaque mensualité, vous remboursez ainsi une partie du capital, mais également des intérêts.</sc:para>
+								<sc:para xml:space="preserve">Dans cet exercice, nous allons voir concrètement comment se ventilent les intérêts et le remboursement du capital sur chaque mensualité. Lors de la renégociation d'un prêt, la valeur du capital qui reste à rembourser aura une grande importance.</sc:para>
+								<sc:para xml:space="preserve">Le tableau ci-contre est un exemple de ce qu'il est possible de générer efficacement de façon automatique avec les fonctions financières d'Excel</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:img sc:refUri="/Image/ExoSuppl/tableauRemboursement.png"/>
+					</op:txtRes>
+				</sp:txtRes>
+			</op:res>
+		</sp:desc>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>La fonction INTPER</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">De façon à calculer les intérêts remboursés chaque mois, nous avons besoin d'introduire une nouvelle fonction.</sc:para>
+						<sc:para xml:space="preserve">La fonction <sc:phrase role="url"><op:urlM><sp:url>https://support.office.com/fr-fr/article/INTPER-INTPER-fonction-5cce0ad6-8402-4a41-8d29-61a0b054cb6f</sp:url><sp:title>INTPER</sp:title></op:urlM>INTPER</sc:phrase> permet de faire ce calcul de la façon suivante :</sc:para>
+						<sc:para xml:space="preserve"><sc:inlineStyle role="code">INTPER(taux, pér, npm, va)</sc:inlineStyle></sc:para>
+						<sc:para xml:space="preserve">On reconnait <sc:inlineStyle role="code">TAUX</sc:inlineStyle> le taux d'intéret, <sc:inlineStyle role="code">NPM</sc:inlineStyle> le nombre de mensualités, <sc:inlineStyle role="code">et VA</sc:inlineStyle> la valeur empruntée. <sc:inlineStyle role="code">pér</sc:inlineStyle> est une valeur comprise entre 1 et npm qui indique la période (mensualité) considérée.</sc:para>
+						<sc:table role="">
+							<sc:column width="50"/>
+							<sc:column width="50"/>
+							<sc:row>
+								<sc:cell>
+									<sc:para xml:space="preserve">Données</sc:para>
+								</sc:cell>
+								<sc:cell>
+									<sc:para xml:space="preserve">Description</sc:para>
+								</sc:cell>
+							</sc:row>
+							<sc:row>
+								<sc:cell>
+									<sc:para xml:space="preserve">10%</sc:para>
+								</sc:cell>
+								<sc:cell>
+									<sc:para xml:space="preserve">Taux</sc:para>
+								</sc:cell>
+							</sc:row>
+							<sc:row>
+								<sc:cell>
+									<sc:para xml:space="preserve">1</sc:para>
+								</sc:cell>
+								<sc:cell>
+									<sc:para xml:space="preserve">Période Pér</sc:para>
+								</sc:cell>
+							</sc:row>
+							<sc:row>
+								<sc:cell>
+									<sc:para xml:space="preserve">3</sc:para>
+								</sc:cell>
+								<sc:cell>
+									<sc:para xml:space="preserve">Nombre d'années NPM</sc:para>
+								</sc:cell>
+							</sc:row>
+							<sc:row>
+								<sc:cell>
+									<sc:para xml:space="preserve">8000€</sc:para>
+								</sc:cell>
+								<sc:cell>
+									<sc:para xml:space="preserve">Montant de l'emprunt VA</sc:para>
+								</sc:cell>
+							</sc:row>
+						</sc:table>
+						<sc:para xml:space="preserve">Les intérêts remboursés le premier mois sont ainsi calculés par :</sc:para>
+						<sc:para xml:space="preserve">INTPER(Taux/12 ; Pér ; NPM *12 ; VA)= INTPER(0,10/12 ; 1 ; 3*12 ; 8000)=66,67 €</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Dans le cas précédent, les intérêts remboursés le premier mois sont de 66,67€. </sc:para>
+								<sc:para xml:space="preserve">Quel est le montant de la mensualité ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">VPM</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">À l'aide de la mensualité que vous venez de calculer et du montant des intérêts remboursés le premier mois, quelle est la part du capital remboursé le premier mois ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Calculer les intérêts remboursés le deuxieme mois (pér = 2). Que remarquez vous ? Sachant que la mensualité ne change pas, quelle est la part du capital remboursé le second mois, et quelle part du capital reste-t-il à rembourser ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">À l'aide de ce que nous venons de voir, créer le tableau permettant d'ob</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">À l'aide de ce que nous venons de voir, créer le tableau de remboursement ci-contre. Chaque cellule doit être calculée automatique. Ainsi, à la fin de la réalisation, vous devez être capables de changer le taux ou le montant de l'emprunt et de visualiser le tableau automatiquement.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/ExoSuppl/solution.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>
