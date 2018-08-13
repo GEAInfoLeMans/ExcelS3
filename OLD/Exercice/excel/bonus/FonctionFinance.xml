@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Fonctions financières</sp:title>
+		</op:uM>
+		<sp:div>
+			<op:expUcDiv>
+				<op:expUcDivM>
+					<sp:title>Introduction</sp:title>
+				</op:expUcDivM>
+				<sp:pb>
+					<op:pb>
+						<sp:def>
+							<op:pbTi/>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Pour étudier un placement ou un prêt avec Excel, il faut connaître les notations suivantes :</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">taux</sc:inlineStyle> = taux d'intérêt (annuel) appliqué au prêt ou au placement ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">npm</sc:inlineStyle> = Nombre total de versements dans le cadre du prêt, sinon durée du placement ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">vpm</sc:inlineStyle> = Montant du remboursement de chaque période (ex. mensualités) dans le cadre d'un prêt ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">va</sc:inlineStyle> = Valeur actuelle (montant du placement ou montant du prêt) ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">vc</sc:inlineStyle>= Valeur capitalisée, c'est à dire la valeur future dans le cadre d'un placement.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Ainsi, dans le cadre d'un <sc:inlineStyle role="emp">prêt</sc:inlineStyle>, on s'intéresse à :</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">taux</sc:inlineStyle> = taux d'intérêt (annuel) appliqué au prêt ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">npm</sc:inlineStyle> = Nombre total de versements de remboursement ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">vpm</sc:inlineStyle> = Montant du remboursement de chaque période ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">va</sc:inlineStyle> = Valeur actuelle (montant du prêt).</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Et dans le cadre d'un <sc:inlineStyle role="emp">placement</sc:inlineStyle> :</sc:para>
+										<sc:itemizedList>
+											<sc:listItem>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">taux</sc:inlineStyle> = taux d'intérêt (annuel) appliqué au placement ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">npm</sc:inlineStyle> = la durée du placement ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">va</sc:inlineStyle> = Valeur actuelle (montant du placement) ;</sc:para>
+												<sc:para xml:space="preserve"><sc:inlineStyle role="emp">vc</sc:inlineStyle>= Valeur capitalisée, c'est à dire la valeur future du capital placé.</sc:para>
+											</sc:listItem>
+										</sc:itemizedList>
+									</op:txt>
+								</sp:txt>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Excel fournit pour chacune de ces valeurs une fonction associée. Ainsi, il existe des fonctions VC, NPM, VPM, VA et TAUX dans Excel qui permettent de calculer l'une de ces valeurs en fonction des autres.</sc:para>
+										<sc:para xml:space="preserve">Par exemple, la documentation Office de la fonction NPM (<sc:phrase role="url"><op:urlM><sp:url>NPM</sp:url><sp:title>https://support.office.com/fr-fr/article/NPM-NPM-fonction-240535b5-6653-4d2d-bfcf-b6a38151d815</sp:title></op:urlM>Lien</sc:phrase>) nous dit que la fonction s'utilise ainsi :</sc:para>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="code">NPM(taux,vpm,va,[vc],[type])</sc:inlineStyle></sc:para>
+										<sc:para xml:space="preserve">Les termes entre crochet sont facultatifs.</sc:para>
+										<sc:para xml:space="preserve">Toutes les autres fonctions sont également décrites dans le documentation Office (il suffit de les googliser).</sc:para>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:def>
+						<sp:ex>
+							<op:pbTi>
+								<sp:title>NPM</sp:title>
+							</op:pbTi>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Nous savons maintenant comment utiliser la fonction NPM. Tentons de l'utiliser sur un exemple.</sc:para>
+										<sc:para xml:space="preserve">Nous souhaitons placer 10 000€ (VA) à la banque pour atteindre 11 000€ (VC) via ce placement. La banque nous propose un placement à 2,50% (TAUX).</sc:para>
+										<sc:para xml:space="preserve">Combien de temps nous faudra-t-il pour atteindre les 11 000€ avec ce taux ?</sc:para>
+										<sc:para xml:space="preserve">NPM(taux ; vpm ; va ; vc) = NPM(0,025 ; 0 ; <sc:inlineStyle role="emp">-</sc:inlineStyle>10 000 ; 11 000)</sc:para>
+										<sc:para xml:space="preserve">La Valeur Actuelle est négative dans ce cas car il s'agit d'un placement.</sc:para>
+										<sc:para xml:space="preserve">En entrant la formule ci-dessous dans une cellule, vous obtenez </sc:para>
+										<sc:para xml:space="preserve">3,85986616262265 -&gt; Il faudra un peu moins de 4 ans pour atteindre 11 000€.</sc:para>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:ex>
+						<sp:ex>
+							<op:pbTi>
+								<sp:title>VPM</sp:title>
+							</op:pbTi>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">Autre exemple, cette fois-ci avec la fonction VPM : </sc:para>
+										<sc:para xml:space="preserve">Nous empruntons 10 000€ (VA) à un taux de 2,50% (TAUX) sur 5 ans (NPM). </sc:para>
+										<sc:para xml:space="preserve">À combien se montent les mensualités (VPM) pour le remboursement du prêt ?</sc:para>
+										<sc:para xml:space="preserve">Nous utilisons la fonction :</sc:para>
+										<sc:para xml:space="preserve">VPM(taux, npm, va, [vc], [type])</sc:para>
+										<sc:para xml:space="preserve">VPM(0,025 /12 ; 5*12 ; 10000)</sc:para>
+										<sc:para xml:space="preserve">Pour obtenir les mensualités (mois), nous avons divisé le taux annuel par 12, et multiplié le nombre d'année par 12.</sc:para>
+										<sc:para xml:space="preserve">Le résultat donne 864,12 €.</sc:para>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:ex>
+					</op:pb>
+				</sp:pb>
+			</op:expUcDiv>
+		</sp:div>
+	</op:expUc>
+</sc:item>

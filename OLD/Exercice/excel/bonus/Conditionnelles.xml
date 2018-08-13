@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Conditionnelles</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Expressions conditionnelles</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Dans ces deux exercices, nous allons revoir les expressions conditionnelles (SI) et les formules logiques associées à leur manipulation (ET, OU). Celles-ci sont très utiles, notamment pour matérialiser des règles variables, des cas particuliers.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exercice 1</sc:inlineStyle></sc:para>
+								<sc:para xml:space="preserve">Votre manager vous demande de calculer le taux de remise à appliquer pour une liste de clients enregistrée dans le fichier Remises.xlsx ci-dessous.</sc:para>
+								<sc:para xml:space="preserve">Ce taux est de 5% si le client est grossiste ET que le Hors Taxe des biens achetés dépasse 10 000€.</sc:para>
+								<sc:para xml:space="preserve">Pour les autres clients, le taux de remise est de 3% si le hors taxes dépasse 10 000 €.</sc:para>
+								<sc:para xml:space="preserve">Calculer le taux de remise, appliquer ce taux pour calculer la valeur de la remise et en déduire le prix à payer par chaque client.</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:int sc:refUri="/Exercice/excel/bonus/Remises.xlsx">
+							<op:instructionM/>
+						</sp:int>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:res sc:refUri="/Image/ExoSuppl/Diapositive2-570x320.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve"><sc:inlineStyle role="emp">Exercice 2</sc:inlineStyle></sc:para>
+										<sc:para xml:space="preserve">On vous demande d'attribuer les primes aux vendeurs de l'entreprise via le fichier Primes.xlsx ci-dessous. Leurs primes sont basées sur leurs ventes mais également sur leur ancienneté.</sc:para>
+										<sc:para xml:space="preserve">Les règles à implémenter sont les suivantes :</sc:para>
+										<sc:para xml:space="preserve">-De 0 à 8 ans d'ancienneté, le salarié appartient à la catégorie 1 ;</sc:para>
+										<sc:para xml:space="preserve">-De 8 à 15 ans, le salarié appartient à la catégorie 2 ;</sc:para>
+										<sc:para xml:space="preserve">-Au dessus de 15 ans, le salarié appartient à la catégorie 3.</sc:para>
+										<sc:para xml:space="preserve">Pour calculer la prime, il s'agit donc de prendre compte et la Catégorie du salarié, et ses ventes :</sc:para>
+										<sc:para xml:space="preserve">-De 100 000 à 130 000, le salarié se voit attribuer 100€ de prime de base, et 50€ de plus s'il est de catégorie 2 ou 3 ;</sc:para>
+										<sc:para xml:space="preserve">-De 130 000 à 150 000, le salarié se voit attribuer 150€ de prime de base, et 50€ de plus s'il est de catégorie 1, 75€ s'il s'il de catégorie 2 ou 3;</sc:para>
+										<sc:para xml:space="preserve">-Au dessus de 150 000, le salarié se voit attribuer 200€ de prime de base, et 100€ de plus s'il est de catégorie 1, 200€ s'il s'il de catégorie 2 ou 3.</sc:para>
+										<sc:para xml:space="preserve">Calculer ensuite pour chaque catégorie la somme des ventes moyenne, ainsi que les primes affectées.</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/ExoSuppl/vendeurPrime.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:int sc:refUri="/Exercice/excel/bonus/Primes.xlsx">
+							<op:instructionM/>
+						</sp:int>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:res sc:refUri="/Image/ExoSuppl/IF-THEN-ELSE-END_flowchart.svg.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

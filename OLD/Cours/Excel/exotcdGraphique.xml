@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM/>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Mise en forme graphiques des résultats issus d'un tableau croisés dynamiques</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">A partir des réponses obtenues au TD sur le tableau croisé dynamique, obtenez les résultats suivants </sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq1.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq2.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq3a.png"/><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq3b.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">2. Copier la feuille « salariés » dans un nouveau classeur nommé « pyramideages » ;</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Afficher, dans une nouvelle feuille de calcul nommée « nbsalparageselonsexe », le nombre de salariés par année d'âge en distinguant les hommes et les femmes :</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:sol>
+					<op:pb>
+						<sp:info>
+							<op:pbTi/>
+							<op:res>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq4sol.png"/></sc:para>
+									</op:txt>
+								</sp:txt>
+							</op:res>
+						</sp:info>
+					</op:pb>
+				</sp:sol>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Insérer un graphique à barres 2D </sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq5.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq6.png"/></sc:para>
+						<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq6b.png"/></sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">d) « Options des séries », positionner les curseurs sur les valeurs suivantes :</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/exoGrq/exogrq7.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">e) Répéter l'opération pour l'axe secondaire ;</sc:para>
+										<sc:para xml:space="preserve">f) « Options d'axe », «Axe Horizontal (valeur), « Options d'axe » :<sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogrq9.png"/></sc:para>
+										<sc:para xml:space="preserve">g) Passer le minimum à -15 et le maximum à 15 puis cocher le dernier item :</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/exoGrq/exogrq8.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>lft</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">h) Répéter l'opération pour l'axe secondaire horizontal, <sc:inlineImg role="ico" sc:refUri="/Image/exoGrq/exogr10.png"/>sans cocher <sc:inlineStyle role="code"> Valeurs en ordre inverse</sc:inlineStyle> :</sc:para>
+										<sc:para xml:space="preserve">i) Dans « NOMBRE », renseigner le champ « code de format » comme indiqué :</sc:para>
+										<sc:para xml:space="preserve">j) Puis :</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/exoGrq/exogrq11.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+						<sp:txtRes>
+							<op:txtRes>
+								<op:txtResM>
+									<sp:pos>rgt</sp:pos>
+								</op:txtResM>
+								<sp:txt>
+									<op:txt>
+										<sc:para xml:space="preserve">k) Répéter l'opération pour l'axe inférieur :</sc:para>
+									</op:txt>
+								</sp:txt>
+								<sp:img sc:refUri="/Image/exoGrq/exogrq12.png"/>
+							</op:txtRes>
+						</sp:txtRes>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+	</op:practUc>
+</sc:item>

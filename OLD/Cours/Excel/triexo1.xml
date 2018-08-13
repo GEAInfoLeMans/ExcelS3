@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Fichier de salariés</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Mise en forme des données</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Fichier Excel à utiliser : «<sc:uLink role="docLnk" sc:refUri="/Exercice/excel/salariesetu.xlsx"> salariesetu </sc:uLink>». Ce fichier contient un nombre important de données sur les salariés. En l'état, la recherche d'informations est fastidieuse.</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Effectuer les opérations suivantes</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:res sc:refUri="/Image/texotriimg1.png">
+							<op:resInfoM/>
+						</sp:res>
+						<sp:res sc:refUri="/Image/triexoimg2.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:res sc:refUri="/Image/triexoimg3.png">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Trier les données</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">A l'aide des menus de tri rapide, effectuer les recherches suivantes :</sc:para>
+								<sc:para xml:space="preserve">1. Combien de salariés ont une rémunération supérieure à 100 000€ ?</sc:para>
+								<sc:para xml:space="preserve">2. Quelle est la date de naissance d' « IGOR » ?</sc:para>
+								<sc:para xml:space="preserve">3. Quels sont les prénoms des salariés du nom de « FRAICHI »?</sc:para>
+								<sc:para xml:space="preserve">4. Afficher les salariés du nom de « FROID », classés du plus âgé au plus jeune.</sc:para>
+								<sc:para xml:space="preserve">5. Quelle est la catégorie des salariés dont le nom se termine par « TAMOB » ?</sc:para>
+								<sc:para xml:space="preserve">6. Quelle est la particularité de la salariée portant le nom de « DERROISNE » ?</sc:para>
+								<sc:para xml:space="preserve">7. Dans quel pays, la famille « MIRON » passera-t-elle les prochaines vacances ?</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:quest>
+			<op:practUcQ>
+				<sp:desc>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">FIGER, FRACTIONNER </sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">8. Figer les volets au niveau des entêtes;</sc:para>
+								<sc:para xml:space="preserve">9. Fractionner le tableau afin de conserver l'affichage des matricules, noms et prénoms.</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:desc>
+				<sp:hint>
+					<op:res>
+						<sp:res sc:refUri="/Cours/Excel/figer.net">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:hint>
+			</op:practUcQ>
+		</sp:quest>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Données</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:int sc:refUri="/Exercice/excel/salairesetu.xls">
+					<op:instructionM/>
+				</sp:int>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

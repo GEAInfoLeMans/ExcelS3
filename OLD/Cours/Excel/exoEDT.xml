@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:practUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:exeM>
+			<sp:title>Analyse d'emploi du temps</sp:title>
+		</op:exeM>
+		<sp:desc>
+			<op:sTitle>
+				<sc:fullTitle>Emploi du temps</sc:fullTitle>
+			</op:sTitle>
+			<op:res>
+				<sp:txt>
+					<op:txt>
+						<sc:para xml:space="preserve">Le fichier<sc:uLink role="docLnk" sc:refUri="/Exercice/excel/EDT.xlsx"> suivant</sc:uLink> contient l'emploi du temps des étudiants pour un semestre. On vous demande d'effectuer une analyse des données (exemple nombre d'heure par groupe, par matière taux d'occupation des salles par jour....)</sc:para>
+					</op:txt>
+				</sp:txt>
+			</op:res>
+		</sp:desc>
+	</op:practUc>
+</sc:item>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Tableau croisés dynamiques (aide Excel)</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi/>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">La possibilité d'analyser toutes les données de votre feuille de calcul peut vous aider à prendre de meilleures décisions professionnelles. Mais parfois, il est difficile de savoir par où commencer, particulièrement quand vous avez de très nombreuses données. Excel peut vous aider en recommandant, puis en créant automatiquement des tableaux croisés dynamiques, qui permettent de synthétiser, d'analyser, d'explorer et de présenter vos données. Par exemple, voici une liste simplifiée de dépenses :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/aideTcd1.png"/></sc:para>
+								<sc:para xml:space="preserve">Voici les mêmes données synthétisées dans un tableau croisé dynamique :</sc:para>
+								<sc:para xml:space="preserve"><sc:inlineImg role="ico" sc:refUri="/Image/aideTcd2.png"/></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+				<sp:meth>
+					<op:pbTi>
+						<sp:title>Créer un tableau croisé dynamique manuellement (Aide excel)</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Si vous connaissez la disposition des données que vous allez utiliser, vous pouvez créer un tableau croisé dynamique manuellement.</sc:para>
+								<sc:para xml:space="preserve">Ouvrez le classeur dans lequel vous souhaitez créer le tableau croisé dynamique.</sc:para>
+								<sc:para xml:space="preserve">Cliquez sur une cellule de la liste ou du tableau qui contient les données à utiliser dans le tableau croisé dynamique.</sc:para>
+								<sc:para xml:space="preserve">Sous l'onglet Insertion, cliquez sur Tableau croisé dynamique.</sc:para>
+								<sc:para xml:space="preserve">Bouton Tableau croisé dynamique sous l'onglet Insertion</sc:para>
+								<sc:para xml:space="preserve">Dans la feuille de calcul, vos données devraient être encadrées par des pointillés. Si ce n'est pas le cas, cliquez sur vos données et faites glisser le pointeur pour les sélectionner. En procédant de la sorte, la zone Tableau/Plage est automatiquement remplie par la plage de cellules que vous avez sélectionnée.</sc:para>
+								<sc:para xml:space="preserve">Sous Choisissez l'emplacement de votre rapport de tableau croisé dynamique, sélectionnez Nouvelle feuille de calcul pour placer le tableau croisé dynamique dans un nouvel onglet de feuille de calcul. Vous pouvez également cliquer sur Feuille de calcul existante, puis cliquer dans la feuille pour spécifier l'emplacement.</sc:para>
+								<sc:para xml:space="preserve">Conseil : Pour analyser plusieurs tableaux dans un tableau croisé dynamique, activez la case à cocher Ajouter ces données au modèle de données.</sc:para>
+								<sc:para xml:space="preserve">Cliquez sur OK.</sc:para>
+								<sc:para xml:space="preserve">Dans la liste des champs de tableau croisé dynamique, effectuez l'une des opérations suivantes :</sc:para>
+								<sc:para xml:space="preserve">Pour</sc:para>
+								<sc:para xml:space="preserve">Procédez comme suit</sc:para>
+								<sc:para xml:space="preserve">Ajouter un champ</sc:para>
+								<sc:para xml:space="preserve">Dans la zone NOM DU CHAMP, activez la case à cocher correspondant au champ. Par défaut, les champs non numériques sont ajoutés à la zone Ligne, les hiérarchies de date et d'heure sont ajoutées à la zone Colonne et les champs numériques sont ajoutés à la zone Valeurs.</sc:para>
+								<sc:para xml:space="preserve">Supprimer un champ</sc:para>
+								<sc:para xml:space="preserve">Dans la zone NOM DU CHAMP, désactivez la case à cocher correspondant au champ.</sc:para>
+								<sc:para xml:space="preserve">Déplacer un champ</sc:para>
+								<sc:para xml:space="preserve">Faites glisser le champ d'une zone de la liste des champs de tableau croisé dynamique vers une autre, par exemple, de Colonnes vers Lignes.</sc:para>
+								<sc:para xml:space="preserve">Modifier le calcul utilisé dans un champ de valeur</sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:meth>
+				<sp:comp>
+					<op:pbTi/>
+					<op:res>
+						<sp:res sc:refUri="/Cours/Excel/tcd.net">
+							<op:resInfoM/>
+						</sp:res>
+					</op:res>
+				</sp:comp>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

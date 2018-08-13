@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:expUc xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Min.si.ens, max.si.ens</sp:title>
+		</op:uM>
+		<sp:pb>
+			<op:pb>
+				<sp:info>
+					<op:pbTi>
+						<sp:title>Min.si.ens, max.si.ens</sp:title>
+					</op:pbTi>
+					<op:res>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Les fonctions <sc:inlineStyle role="code">moyenne.si.sens</sc:inlineStyle>, <sc:inlineStyle role="code">somme.si.ens</sc:inlineStyle> permettent de calculer la moyenne ou la somme de un ou plusieurs critères simultanément. Le traducteur d'Excel a oublié de traduire la fonction <sc:phrase role="url"><op:urlM><sp:url>https://support.office.com/en-us/article/MAXIFS-function-dfd611e6-da2c-488a-919b-9b6376b28883</sp:url></op:urlM><sc:phrase role="url"><sc:phrase role="url"><sc:inlineStyle role="code">max<sc:phrase role="url"><op:urlM><sp:url>https://support.office.com/en-us/article/MAXIFS-function-dfd611e6-da2c-488a-919b-9b6376b28883</sp:url></op:urlM></sc:phrase>ifs</sc:inlineStyle></sc:phrase></sc:phrase></sc:phrase> en français, nous allons devoir trouver un autre moyen...</sc:para>
+							</op:txt>
+						</sp:txt>
+						<sp:txt>
+							<op:txt>
+								<sc:para xml:space="preserve">Il faut utiliser une <sc:phrase role="url"><op:urlM><sp:url>https://support.office.com/fr-fr/article/Instructions-et-exemples-de-formules-matricielles-FEEAC856-88A1-4219-95A5-40107A1B4365</sp:url></op:urlM>formule dite matricielle</sc:phrase>. Une exemple de formule matricielle est contenu dans ce  <sc:uLink role="docLnk" sc:refUri="/Exercice/excel/dollar.xlsx">document</sc:uLink><sc:uLink role="docLnk" sc:refUri="/Exercice/excel/dollar.xlsx"/></sc:para>
+								<sc:para xml:space="preserve">Pour valider une telle formule il faut utiliser la touche <sc:inlineStyle role="code">CTRL+ENTREE</sc:inlineStyle></sc:para>
+							</op:txt>
+						</sp:txt>
+					</op:res>
+				</sp:info>
+			</op:pb>
+		</sp:pb>
+	</op:expUc>
+</sc:item>

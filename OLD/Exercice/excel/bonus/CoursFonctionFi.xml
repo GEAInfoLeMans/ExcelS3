@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sc:item xmlns:sc="http://www.utc.fr/ics/scenari/v3/core">
+	<op:courseUa xmlns:op="utc.fr:ics/opale3" xmlns:sp="http://www.utc.fr/ics/scenari/v3/primitive">
+		<op:uM>
+			<sp:title>Fonctions financières</sp:title>
+		</op:uM>
+		<sp:obj>
+			<op:sTxt>
+				<sc:para xml:space="preserve">Dans ce module de cours, l'objectif est de prendre en main l'utilisation d'une partie des fonctions dites &quot;financières&quot; d'Excel. En particulier, ces fonctions vont nous permettre d'étudier une demande de prêt, ses mensualités, sa durée de remboursement, ou d'étudier la rentabilité d'un placement.</sc:para>
+			</op:sTxt>
+		</sp:obj>
+		<sp:courseUc sc:refUri="/Exercice/excel/bonus/FonctionFinance.xml"/>
+		<sp:trainUcCoQuiz sc:refUri="/Exercice/excel/bonus/QcmFi.xml"/>
+		<sp:practUc sc:refUri="/Exercice/excel/bonus/TableauInteret.xml"/>
+	</op:courseUa>
+</sc:item>
